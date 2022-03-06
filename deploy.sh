@@ -13,6 +13,6 @@ echo "删除旧文件"
 rm -rf /home/www/*
 
 # 将打包好的文件复制过去
-mv /tmp/vue-deploy-demo/dist/*  /home/www
+mv /tmp/auto-deploy-vue/dist/*  /home/www
 # 删除 clone 的代码
-rm -rf /tmp/vue-deploy-demo
+rm -rf /tmp/auto-deploy-vue
