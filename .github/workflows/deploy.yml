@@ -1,0 +1,25 @@
+name: Publish And Deploy Demo
+on:
+  push:
+    branches:    
+      - master
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    # 部署到服务器
+    - name: Deploy
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.KEY }}
+        port: ${{ secrets.PORT }}
+        debug: true
+        script: |
+          cd /tmp
+          git clone http://github.com/goddlts/vue-deploy-demo.git
+          cd /tmp/vue-deploy-demo
+          chmod +x ./deploy.sh
+          ./deploy.sh
