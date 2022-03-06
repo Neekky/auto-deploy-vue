@@ -16,6 +16,6 @@ echo "将打包好的文件复制至www文件夹"
 # 将打包好的文件复制过去
 mv /tmp/auto-deploy-vue/dist/*  /home/www
 
-echo "删除克隆的代码1"
+echo "删除克隆的代码"
 # 删除 clone 的代码
 rm -rf /tmp/auto-deploy-vue

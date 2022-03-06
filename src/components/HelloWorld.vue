@@ -8,7 +8,7 @@
           href="https://vuejs.org"
           target="_blank"
         >
-          Core Docs
+          Core Docs33333
         </a>
       </li>
       <li>
@@ -16,7 +16,7 @@
           href="https://forum.vuejs.org"
           target="_blank"
         >
-          Forum
+          Forum213213
         </a>
       </li>
       <li>
@@ -45,6 +45,7 @@
         </a>
       </li>
     </ul>
+    <div>有没有自动更新，自动部署啊</div>
     <h2>Ecosystem</h2>
     <ul>
       <li>
@@ -88,7 +89,7 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to Your Vue.js App 让我看一看变更'
     }
   }
 }
