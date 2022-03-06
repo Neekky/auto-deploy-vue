@@ -2,14 +2,14 @@ name: Publish And Deploy Demo
 on:
   push:
     branches:    
-      - master
+      - main
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
     # 部署到服务器
-    - name: Deploy
+    - name: AutoDeploy
       uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.HOST }}
